@@ -2,6 +2,9 @@
 
 > VisualEditor UI for vue
 
+### 界面示意图
+![界面示意图](/src/assets/images/veui-design.png)
+
 ### 返回的数据格式如下：
 ```
 {
