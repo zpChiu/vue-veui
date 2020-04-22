@@ -2,6 +2,9 @@
 
 > VisualEditor UI for vue
 
+### CSDN文章
+[基于Vue搭建的可视化页面编辑平台（打造大中台、小前台的基础建设）](https://blog.csdn.net/PikaChiu/article/details/105677835)
+
 ### 界面示意图
 ![界面示意图](/src/assets/images/veui-design.png)
 
@@ -69,6 +72,9 @@
 ``` bash
 # install dependencies
 npm install
+
+# install babel-polyfill
+npm install --save babel-polyfill
 
 # serve with hot reload at localhost:8080
 npm run dev

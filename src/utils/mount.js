@@ -7,6 +7,7 @@ import store from '../store';
 // import preview from './preview'
 // 给定模板，和要挂载的元素id，挂载组件
 var mount = function (id, _component) {
+    // 数据响应关系脱离
     let _vue = global.deepClone(_component.vue);
     
     if ( _vue.script && typeof _vue.script==='string' ) {
