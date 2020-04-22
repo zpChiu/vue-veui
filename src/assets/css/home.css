@@ -1,0 +1,148 @@
+.main {
+    height: 100%;
+}
+.header {
+    margin-bottom: 5px;
+    position: relative;
+    height: 60px;
+    background-color: #4d5aaf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.head-title {
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 550;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+.contain {
+    padding: 2px 0;
+    height: calc(100% - 65px);
+    overflow: hidden;
+}
+.contain > div {
+    float: left;
+}
+/* 组件库面板 */
+.panel-component {
+    margin-right: 5px;
+    display: inline-block;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* 预览面板 */
+.panel-page {
+    margin: 0 5px;
+    display: inline-block;
+    width: calc(100% - 290px * 2);
+    height: 100%;
+    background-color: #fff;
+}
+.panel-head {
+    margin-bottom: 5px;
+    position: relative;
+    height: 36px;
+    background-color: #f0fcff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.117647),
+        0 1px 4px rgba(0, 0, 0, 0.117647);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.panel-page-title {
+    padding-left: 16px;
+    display: inline-block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 14px;
+    line-height: 36px;
+}
+.page-tools {
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100%;
+    margin: -18px auto;
+}
+.page-tools ul {
+    display: inline-block;
+    height: 100%;
+}
+.page-tools li {
+    width: 40px;
+    height: 100%;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    float: left;
+}
+.tool-css {
+    background-image: url("~@assets/images/visualBase/css.png");
+    background-size: 20px 20px;
+}
+.tool-preview {
+    background-image: url("~@assets/images/visualBase/preview.png");
+    background-size: 25px 25px;
+}
+.tool-active{
+    background-color: #fff;
+}
+.page-preview,
+.page-cssEditor {
+    height: calc(100% - 41px);
+    overflow: auto;
+    transition: 0.35s;
+}
+.preview-translate {
+    transform: translateY(100%);
+}
+.cssEditor-translate {
+    transform: translateY(-100%);
+}
+/* 属性面板 */
+.panel-attributes {
+    margin-left: 5px;
+    display: inline-block;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+}
+.config-attributes {
+    padding: 5px;
+    padding-top: 0;
+    height: calc(100% - 41px);
+    overflow: auto;
+}
+.panel-sub {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+    height: 36px;
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 36px;
+    text-align: left;
+    background-color: #f0fcff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.117647),
+        0 1px 4px rgba(0, 0, 0, 0.117647);
+    border-top-left-radius: 5px;
+}
+.test-btn {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+.test-btn >>> .ivu-btn {
+    color: #2d8cf0;
+    background-color: #fff;
+    border-color: #fff;
+}
