@@ -26,4 +26,7 @@ export default {
     typeof (target) {
         return Object.prototype.toString.call(target).slice(8,-1);
     },
+    eval (code) {
+        return new Function('return ' + code)();
+    }
 }

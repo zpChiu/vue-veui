@@ -11,7 +11,7 @@ var mount = function (id, _component) {
     let _vue = global.deepClone(_component.vue);
     
     if ( _vue.script && typeof _vue.script==='string' ) {
-        _vue.script = eval('(' + _vue.script + ')');
+        _vue.script = global.eval('(' + _vue.script + ')');
     }
 
     return new Promise((resolve, reject) => {
